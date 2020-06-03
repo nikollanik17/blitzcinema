@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.log-sign {
+  font-family: "Montserrat", sans-serif;
+  background: #f6f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.h1-log-sign {
+  font-weight: bold;
+  margin: 0;
+}
+
+.p-log-sign {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+span {
+  font-size: 12px;
+}
+
+.a-log-sign {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.container-log-sign {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  /*position: relative;*/
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  height: 400px;
+  min-height: 480px;
+  /*margin-top: 500px !important;*/
+}
+
+.form-container form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.form-container input {
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.btn-reserve {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background: #ff4b2b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btn-reserve:active {
+  transform: scale(0.95);
+}
+
+.btn-reserve:focus {
+  outline: none;
+}
+
+.btn-reserve.ghost {
+  background: transparent;
+  border-color: #fff;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.container-log-sign h1{
+  font-weight: bold !important;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.overlay {
+  background: #ff416c;
+  background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+/* Animation */
+
+/*!* Move signin to the right *!*/
+/*.container-log-sign.right-panel-active .sign-in-container {*/
+/*  transform: translateX(100%);*/
+/*}*/
+
+/*!* Move overlay to left *!*/
+/*.container-log-sign.right-panel-active .overlay-container {*/
+/*  transform: translateX(-100%);*/
+/*}*/
+
+/*!* Bring sign up over sign in *!*/
+/*.container-log-sign.right-panel-active .sign-up-container {*/
+/*  transform: translateX(100%);*/
+/*  opacity: 1;*/
+/*  z-index: 5;*/
+/*}*/
+
+/*!* Move overlay back to the right *!*/
+/*.container-log-sign.right-panel-active .overlay {*/
+/*  transform: translateX(50%);*/
+/*}*/
+
+/*.container-log-sign.right-panel-active .overlay-left {*/
+/*  transform: translateX(0);*/
+/*}*/
+
+/*.container-log-sign.right-panel-active .overlay-right {*/
+/*  transform: translateX(20%);*/
+/*}*/
+
+/* INDEX */
+.navbar {
+  background: #151515 !important;
+}
+
+.navbar-dark {
+  background: #151515 !important;
+}
+.navbar-nav a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: 0.2rem 1rem;
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-toggler {
+    padding: 1px 5px;
+    /* font-size: 25px; */
+  }
+
+  .nav-item {
+    margin: 0.3rem 0;
+  }
+
+  .navbar-nav {
+    font-size: 48px !important;
+  }
+
+  .slide-span {
+    font-size: 4rem !important;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #3b5998;
+  transition: all 0.3s;
+}
+
+.slider-wrap,
+#slider,
+.slide-content {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.slider-wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("../images/slider-img1.jpg");
+}
+
+.slide2 {
+  background-image: url("../images/slider-img2.jpg");
+}
+.slide3 {
+  background-image: url("../images/slider-img3.jpg");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content .slide-span {
+  font-size: 5rem;
+  color: #e66d1c;
+  font-weight: bold;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+}
+
+.arrow i {
+  font-size: 30px;
+  color: #fff;
+}
+
+#arrow-left {
+  left: 2%;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  right: 4%;
+  margin-right: 30px;
+}
+
+/* Index section */
+.index-section {
+  margin: 5rem 0;
+}
+
+.index-col img {
+  width: 300px;
+  height: 280px;
+}
+
+.index-col p {
+  margin-top: 10px;
+  margin-left: 15%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.index-col {
+  margin: 0 20px;
+}
+
+.index-col a {
+  color: #000;
+}
+
+.index-col:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+@media (max-width: 767px) {
+  .index-section {
+    text-align: center;
+    /* justify-content: center;
+    align-items: center;
+    margin: 5rem auto; */
+  }
+
+  .index-col p {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+/* REPERTOIRE */
+.movies-box {
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+}
+
+.movies-box .row .col-md {
+  padding: 0;
+}
+
+.movies-box .movie {
+  /* width: 100%;
+  height: 100%; */
+  overflow: hidden;
+}
+
+.movies-box .movie .mmm {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.movies-box .movie .mmm img {
+  height: 100%;
+  width: 100%;
+}
+
+.movies-box .mmm:after {
+  content: "";
+  font-size: 24px;
+  text-align: center;
+  padding: 150px 10% 0 10%;
+  color: #444;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  transform: translateY(100%);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.movies-box .mmm:hover:after {
+  transform: translateY(0%);
+}
+
+.movies-box #doolitle:after {
+  content: "Doolitle \A In cinema \A from 30 March \A RESERVE NOW";
+  white-space: pre;
+}
+.movies-box #gretel:after {
+  content: "Gretel \A In cinema \A from 30 March \A RESERVE NOW";
+  white-space: pre;
+}
+
+.movies-box #jamesbond:after {
+  content: "James Bond \A In cinema \A from 15 April \A RESERVE NOW";
+  white-space: pre;
+}
+.movies-box #island:after {
+  content: "Fantasy Island \A In cinema \A from 27 February \A RESERVE NOW";
+  white-space: pre;
+}
+.movies-box #mulan:after {
+  content: "Mulan \A In cinema \A from 27 March \A RESERVE NOW";
+  white-space: pre;
+}
+.movies-box #sonic:after {
+  content: "Sonic \A In cinema \A from 16 February \A RESERVE NOW";
+  white-space: pre;
+}
+.movies-box #wayback:after {
+  content: "The Way Back \A In cinema \A from 6 March \A RESERVE NOW";
+  white-space: pre;
+}
+.movies-box #blackpanther:after {
+  content: "Black Panther \A In cinema \A from 20 April \A RESERVE NOW";
+  white-space: pre;
+}
+
+@media (max-width: 767px) {
+  .movies-box .movie {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* utility classes */
+
+.btn1 {
+  border-radius: 20px !important;
+  border: 1px solid #ff4b2b;
+  background: #ff4b2b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btn1:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btn1:hover {
+  color: #fff !important;
+}
+
+.btn-floating {
+  border: 1px solid #151515;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.btn-floating i {
+  color: #fff;
+}
+
+.btn-fb {
+  background-color: #3b5998;
+}
+
+.btn-tw {
+  background-color: #55acee;
+}
+
+.btn-insta {
+  background-color: #ec4a89;
+}
+
+/* Footer */
+footer {
+  background: #151515 !important;
+  color: #ddd !important;
+}
+
+.col-foot p {
+  margin-bottom: 10px;
+}
+
+/* UNUSED */
+/* slider not responsive */
+/* .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+} */
