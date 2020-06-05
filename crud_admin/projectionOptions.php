@@ -64,7 +64,7 @@ if(!userHaveAdminRole()){
         <div class="row">
             <div class="col-md-12">
                 <div class="page-header clearfix">
-                    <h2 class="pull-left">Movies options</h2>
+                    <h2 class="pull-left">Projection options</h2>
                     <a class="pull-right btn btn-primary" href="createProjection.php">Create new projection</a>
                 </div>
                 <?php

@@ -116,7 +116,7 @@ else {
                                                     $result = mysqli_stmt_get_result($stmt);
                                                     $row2 = mysqli_fetch_array($result);
                                                     echo "<label>Ticket price</label>";
-                                                    echo "<p>" . $row2['ticket_price'] . "$</p>";
+                                                    echo "<p>$ " . $row2['ticket_price'] . "</p>";
                                                 }
                                             }
 //                                            echo "<label>Ticket price</label>";

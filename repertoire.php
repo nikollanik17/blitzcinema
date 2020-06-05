@@ -189,9 +189,9 @@ function userHaveAdminRole(){
             <!-- Links -->
             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Info</h5>
             <p>Working time:</p>
-            <p>Mon-Thu: <br />10 A.M - 9 P.M</p>
+            <p>Mon-Thu: <br />10 A.M - 1 A.M</p>
             <!-- <p>10 A.M - 9 P.M</p> -->
-            <p>Fri-Sun: <br />12 A.M - 11 P.M</p>
+            <p>Fri-Sun: <br />12 A.M - 1 A.M</p>
             <!-- <p>12 A.M - 11 P.M</p> -->
             <p>
               Adress: <br />7519 Temple Street <br />
@@ -232,21 +232,18 @@ function userHaveAdminRole(){
             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Menu</h5>
 
             <ul class="list-unstyled">
-              <li>
-                <a href="#!">Home</a>
-              </li>
-              <li>
-                <a href="#!">Repertoire</a>
-              </li>
-              <li>
-                <a href="#!">Pricelist</a>
-              </li>
-              <li>
-                <a href="#!">Contact</a>
-              </li>
-              <li>
-                <a href="#!">Reserve</a>
-              </li>
+                <li>
+                    <a href="index.php">Home</a>
+                </li>
+                <li>
+                    <a href="repertoire.php">Repertoire</a>
+                </li>
+                <li>
+                    <a href="contact.php">Contact</a>
+                </li>
+                <li>
+                    <a href="reserve.php">Reserve</a>
+                </li>
             </ul>
           </div>
           <!-- Grid column -->
@@ -263,7 +260,7 @@ function userHaveAdminRole(){
           <h5 class="mb-1">Register for free</h5>
         </li>
         <li class="list-inline-item">
-          <a href="#!" class="btn1">SIGN UP</a>
+          <a href="register.php" class="btn1">SIGN UP</a>
         </li>
       </ul>
       <!-- Call to action -->
